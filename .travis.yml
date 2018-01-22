@@ -1,3 +1,10 @@
 language: java
 sudo: false
-script: mvn test
+script: mvn install
+deploy:
+  provider: releases
+  api_key:
+    secure: J7uSRjlmZLTe9axqEnfiKLvs77UA9IPM8B/Xg8ww8B7FQo7DyEVsWDit4ldk/m3OVSLTps5cfXra/GW1S4n36LTXNCx43wewRWtuK5w76Pe2P+mNXX4gXCO3R64aYW1x3mFeEOKW4Rp4dzNOgmetPiOBYtMK9o10C7JurdhTfIo9IpaIrUt0ngG0bd+Mpr+P9U0QO1UFe/ywZhvjbktQcbdZM+FMMlbcdtYAWQyGC8NTM9rXocReJpByhVVu+chm23aY7ozxwLouZoxXTCggFJ/HBDcxWcBfC6niJbr5EEEVt73fJCgMKXY6CeLKHshYYZ2MKiq76tlePT7t33KDauprb0emGutaqqW1uHnKVengEQQ02qr+EFmwIxbGJe8Gvv7Q58I1IGu3TGJNo19oTk6GJYJ8882oE4byk9Sck4gb559YfZuQTxvyMhDA/OfXKryfx922HY6jn7Qb2eeC+QjTB/P7WIsMNeLBBsKkKrZsIpRCgFvGFUN7VWieOBjKH80sfpp72COQsxtutiZi9+/fpHuqtObwkPYMTF5EdpExr6OngPO16Zmsrpd3x/s0iqerXJnWBQMgX7H/hFx4QR6bspDZsYmZeF3xGopwNXQFkdKQ0F/WpX3jhNomwNh7vdI66kNa1Untx3ZiXoZmy3D7oz27YP7MmYB759uLHSE=
+  file: hallo
+  on:
+    repo: BBWMS/calculatorv2
