@@ -8,3 +8,4 @@ deploy:
   file: /home/travis/build/BBWMS/calculatorv2/target/maschneider-0.0.1-SNAPSHOT.jar
   on:
     repo: BBWMS/calculatorv2
+    
